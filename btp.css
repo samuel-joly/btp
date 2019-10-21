@@ -1,1 +1,24 @@
- 
+html
+{
+	background-image:url("images/background.jpg");
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+
+
+
+/* -----------------------ACCUEIL----------------------- */
+
+#mainTitle
+{
+	font-family:;
+	font-size:3em;
+	
+	
+	text-align:center;
+	
+	margin:auto;
+	
+	
+}
