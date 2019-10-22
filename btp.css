@@ -3,6 +3,9 @@ html
 	background-image:url("images/background.jpg");
 	background-size:cover;
 	background-attachment:fixed;
+	
+	width:100vw;
+	overflow:hidden;
 }
 
 
@@ -21,16 +24,13 @@ header img
 	height:2rem;
 }
 
-@font-face
+#title
 {
-	font-family:"Urban";
-	src:url("Urban.ttf");
+	width:100px;
+	margin:auto;
+	margin-bottom:7px;
 }
 
-header h1
-{
-	font-family:"Urban";
-}
 
 #menuClose
 {
@@ -61,8 +61,8 @@ header h1
 
 #menu
 {
-	background-color:#424242;
-	opacity:0.5;
+	background-color:grey;
+	opacity:0.7
 	width:350px;
 	height:100vh;
 	position:fixed;
@@ -123,80 +123,140 @@ header h1
     z-index: 999;
 }
 
-#mainTitle
-{
-	width:100px;
-	margin:auto;
-}
 
 
 /* -----------------------ACCUEIL----------------------- */
 
-p{
-    text-align: justify;
+
+main > a
+{
+	text-decoration:none;
+	color:black;
 }
-/*button2*/
-.butn {
-    position:relative;
-  bottom:35px;
-  margin-left: 10%;  
-  background: #3498db;
-  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-  background-image: -o-linear-gradient(top, #3498db, #2980b9);
-  background-image: linear-gradient(to bottom, #3498db, #2980b9);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
+.acceuil
+{
+    display:flex;
+	width:40%;
+	margin:auto;
+	margin-top:100px;
 }
 
-.butn:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-  text-decoration: none;
+
+#textTitle
+{
+	animation:text-slide 2s ease;
+	animation-fill-mode: forwards;
+	position:relative;
+	left:-1000px;
 }
 
-/* main */
-.enteteAceuil{
-    display: flex;
-    justify-content: center;
+@keyframes text-slide
+{
+	from {left:-1000px;}
+	to {left:0px;}
 }
-#h2Acceuil{
-    margin-left: -7%;
-    margin-top:5%;
+
+#mainLogo
+{
+	animation: image-slide 1s ease;
+	animation-fill-mode: forwards;
+	animation-delay:1s;
+	height: 250px;
+	position:relative;
+	top:-500px;
+	left:-40px;
 }
-#descriptionAceuil{
-    padding-bottom: 4%;
-    padding-right:4%; 
-    padding-left:4%;
+
+@keyframes image-slide
+{
+	from {top:-500px;}
+	to{top:0px;}
 }
-.texteAceuil{
-    background-color: #BDBBBB25;
-    margin:auto;
-    border: 1px solid #EEE;
-    width: 95%;
-    -webkit-box-shadow: 4px 4px 9px 3px rgba(0,0,0,0.75);
--moz-box-shadow: 4px 4px 9px 3px rgba(0,0,0,0.75);
-box-shadow: 4px 4px 9px 3px rgba(0,0,0,0.75);
+
+
+#mainTitle
+{
+	font-size:5em;
+	text-decoration:overline;
+	
+	text-align:center;
 }
-.histoireAceuil{
-        padding-top: 4%;
-    padding-right:4%; 
-    padding-left:4%;
+
+#mainSubTitle
+{
+	font-size:2em;
+	text-align:center;
+	
+	position:relative;
+	bottom:70px;
 }
-#imagesAceui1{
-    float: right;
-   margin-top: -5%;
-    width: 20%;
-    height: 20%;
+
+
+#mainDescription
+{
+	font-size:2.5em;
+	
+	width:80%;
+	margin:auto;
+	
+	position:relative;
+	right:-1700px;
+	
+	animation:description-slide 2s ease;
+	animation-delay:1.7s;
+	animation-fill-mode:forwards;
+}
+
+#mainDescription a
+{
+	font-weight:bold;
+	text-decoration:none;
+	color:black;
+	transition:border 0.4s ease;
+	border-radius:30%;
+}
+
+
+@keyframes description-slide
+{
+	from {right:-1700px;}
+	to {right:0px;}
+}
+
+
+#socialLink
+{
+	display:flex;
+	flex-direction:row;
+	
+	width:350px;
+	margin:auto;
+}
+
+#socialLink img
+{
+	width:150px;
+	position:relative;
+	top:400px;
+}
+
+
+#fbLogo
+{	
+	animation:fromBot 2s ease;
+	animation-delay:2.7s;
+	animation-fill-mode:forwards;
+}
+
+#twLogo
+{
+	animation:fromBot 2s ease;
+	animation-delay:3.2s;
+	animation-fill-mode:forwards;
+}
+
+@keyframes fromBot
+{
+	from {top:400px;}
+	to {top:100px;}
 }
