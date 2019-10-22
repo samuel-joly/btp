@@ -1,19 +1,30 @@
 html
 {
-	background-image:url("images/background.jpg");
-	background-size:cover;
-	background-attachment:fixed;
-	
-	width:100vw;
-	overflow:hidden;
+	padding:0px;
+	margin:0px;
 }
 
 body
 {
 	margin:0px;
+	padding:0px;
+	
+	background-image:url("images/background.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
 }
 
 
+#mainBody
+{
+	overflow:hidden;
+}
+
+#realBody
+{
+	background-image:url("images/bgRealisation.jpg");
+		
+}
 /* -----------------------HEADER----------------------- */
 
 header
@@ -21,12 +32,15 @@ header
 	border-bottom:1px solid rgba(20, 20, 20, 0.1);
 	display:flex;
 	flex-direction:row;
-	
+	width:100%;
+	background-color:rgba(100,100,100,0.7);
 }
 
 header img
 {
 	height:2rem;
+	margin-left:5px;
+	margin-top:5px;
 }
 
 #title
@@ -67,7 +81,7 @@ header img
 #menu
 {
 	background-color:grey;
-	opacity:0.7
+	opacity:0.7;
 	width:350px;
 	height:100vh;
 	position:fixed;
@@ -128,55 +142,8 @@ header img
     z-index: 999;
 }
 
-/* -----------------------FOOTER------------------------ */
-
-footer{
-	
-	width:100%;
-	height:130px;
-	
-	background-color:rgba(50,50,50,0.5);
-	
-	position:relative;
-	top:70px;
-}
-
-footer nav
-{
-	display:flex;
-	flex-direction:row;
-	justify-content:space-around;
-	width:100%;
-}
-
-footer nav div
-{
-	display:flex;
-	flex-direction:column;
-
-	border-right:1px solid white;
-	margin:10px;
-	width:400px;
-}
-
-footer nav a
-{
-	color:white;
-	margin:8px;
-	font-size:2em;
-	text-decoration:none;
-	text-align:center;
-	width:155px;
-	transition:border 1s ease;
-}
-
-footer nav a:hover
-{
-	border-bottom:2px solid black;
-}
 
 /* -----------------------ACCUEIL----------------------- */
-
 
 main > a
 {
@@ -196,14 +163,13 @@ main > a
 {
 	animation:text-slide 2s ease;
 	animation-fill-mode: forwards;
-	position:relative;
-	left:-1000px;
+	margin-left:50rem;
 }
 
 @keyframes text-slide
 {
-	from {left:-1000px;}
-	to {left:0px;}
+	from {margin-left:50rem;}
+	to {margin-left:0rem;}
 }
 
 #mainLogo
@@ -212,15 +178,13 @@ main > a
 	animation-fill-mode: forwards;
 	animation-delay:1s;
 	height: 250px;
-	position:relative;
-	top:-500px;
-	left:-40px;
+	margin-top:-50rem;
 }
 
 @keyframes image-slide
 {
-	from {top:-500px;}
-	to{top:0px;}
+	from {margin-top:-50rem;}
+	to{margin-top:0rem}
 }
 
 
@@ -237,8 +201,7 @@ main > a
 	font-size:2em;
 	text-align:center;
 	
-	position:relative;
-	bottom:70px;
+	margin-top:-70px;
 }
 
 
@@ -249,12 +212,18 @@ main > a
 	width:80%;
 	margin:auto;
 	
-	position:relative;
-	right:-1700px;
+	margin-right:-110rem;
 	
 	animation:description-slide 2s ease;
 	animation-delay:1.7s;
 	animation-fill-mode:forwards;
+}
+
+
+@keyframes description-slide
+{
+	from {margin-right:-110rem;}
+	to {margin-right:10rem;}
 }
 
 #mainDescription a
@@ -262,16 +231,8 @@ main > a
 	font-weight:bold;
 	text-decoration:none;
 	color:black;
-	transition:border 0.4s ease;
-	border-radius:30%;
 }
 
-
-@keyframes description-slide
-{
-	from {right:-1700px;}
-	to {right:0px;}
-}
 
 
 #socialLink
@@ -287,27 +248,213 @@ main > a
 #socialLink img
 {
 	width:150px;
-	position:relative;
-	top:400px;
+	margin-top:50px;
+	margin-bottom:69px;
 }
-
 
 #fbLogo
 {	
-	animation:fromBot 2s ease;
-	animation-delay:2.7s;
+	opacity:0;
+	animation-name:fadeIn;
+	animation-delay:2.5s;
 	animation-fill-mode:forwards;
+	animation-duration:1s;
 }
 
 #twLogo
 {
-	animation:fromBot 2s ease;
-	animation-delay:3.2s;
+	opacity:0;
+	animation-name:fadeIn;
+	animation-duration:1s;
+	animation-delay:3s;
 	animation-fill-mode:forwards;
 }
 
-@keyframes fromBot
+@keyframes fadeIn
 {
-	from {top:400px;}
-	to {top:50px;}
+	from{opacity:0;}
+	to{opacity:1;}
+}
+
+
+/*------------------------------------ REALISATION ------------------------------------*/
+
+.realColonne
+{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	
+	
+	margin:auto;
+	margin-top:70px;
+}
+
+.alignementReal
+{
+	width:23%;
+	height:500px;
+	margin:20px;
+	background-size:cover;
+}
+
+#bat{background-image:url("images/bat.jpg");}
+#bat1{background-image:url("images/bat1.jpg");}
+#bat2{background-image:url("images/bat2.jpg");}
+#bat3{background-image:url("images/bat3.jpg");}
+#bat4{background-image:url("images/bat4.jpg");}
+#bat5{background-image:url("images/bat5.jpg");}
+#bat6{background-image:url("images/bat6.jpg");}
+#bat7{background-image:url("images/bat7.jpg");}
+#bat8{background-image:url("images/bat8.jpg");}
+
+
+.hidden 
+{
+	opacity:0;
+	background-color:rgba(150,150,200,0.8);
+	height:500px;
+	transition: opacity 1s ease-in-out;
+	
+}
+
+.alignementReal:hover .hidden
+{
+	opacity:1;
+	transition: opacity 1s ease-in-out;
+}
+
+/* --------------PAPER--------------*/
+
+.paper
+{
+	width:80%;
+	margin:auto;
+	
+	overflow:hidden;
+}
+
+.paper h1
+{
+	text-align:center;
+}
+
+.paper h2
+{
+	font-size:0.8em;
+	text-align:center;
+	
+	transform:translate(0,-20px);
+}
+
+.paper mark
+{
+	text-decoration:line-through;
+	background-color:transparent;
+}
+
+.carac
+{
+	font-size:1.2em;
+	text-align:justify;
+}
+
+
+.stats
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+}
+
+.stats img
+{
+	width:30px;
+	margin:auto;
+}
+
+.stats>div
+{
+	border-left:1px solid orange;
+	width:30%;
+}
+
+.stats>div a
+{
+	text-decoration:none;
+	color:orange;
+}
+
+.stats div div
+{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	
+	margin:auto;
+	
+	height:50px;
+}
+
+.stats div div p
+{
+	text-align:center;
+}
+
+
+
+
+
+
+
+
+/* -----------------------FOOTER------------------------ */
+
+footer
+{	
+	width:100%;
+	height:150px;
+	background-color:rgba(50,50,50,0.5);
+}
+
+footer nav
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+}
+
+footer nav div
+{
+	display:flex;
+	flex-direction:column;
+
+	border-right:1px solid white;
+	width:400px;
+	
+	transform:translate(0,20px);
+}
+
+footer nav a
+{
+	color:white;
+	margin:10px;
+	font-size:2em;
+	text-decoration:none;
+	text-align:center;
+	transition:0.5s;
+	width:155px;
+}
+
+footer nav a:hover
+{
+	transition:color 1s ease;
+	color:rgba(150,150,200,1);
+}
+
+#contactFooter
+{
+	margin-top:50px;
 }
