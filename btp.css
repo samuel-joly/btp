@@ -88,7 +88,7 @@ header img
 #menu
 {
 	background-color:white;
-	opacity:0.7;
+	opacity:0.9;
 	width:350px;
 	height:100vh;
 	position:fixed;
@@ -149,6 +149,32 @@ header img
     z-index: 999;
 }
 
+#proInfo
+{
+	position:absolute;
+	bottom:30px;
+	
+	padding-top:20px;
+	border-top:1px dotted grey;
+}
+
+#proInfo>*
+{
+	margin:10px;
+}
+
+
+#socialMenuLink
+{
+	display:flex;
+	justify-content:space-around;
+}
+
+#socialMenuLink img
+{
+	height:50px;
+	margin-top:-20px;
+}
 
 /* -----------------------ACCUEIL----------------------- */
 
