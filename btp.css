@@ -14,6 +14,11 @@ body
 	background-repeat:no-repeat;
 }
 
+@font-family
+{
+	font-family:"Urban";
+	src:url("Urban.otf");
+}
 
 #mainBody
 {
@@ -83,7 +88,6 @@ header img
 {
 	background-color:#fff;
 }
-
 
 #menu
 {
@@ -468,9 +472,486 @@ header img
 }
 
 
+/* --------------------------EQUIPE------------------------- */
+
+#equipeWrapper
+{
+	margin-top:70px;
+	margin-bottom:70px;
+	
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.equipePaper
+{
+	background-image:url("images/orientedPaper.png");
+	width:376px;
+	height:400px;
+}
+
+.equipePaper > *
+{
+	transform:rotate(15deg);
+}
 
 
 
+
+#eq
+{
+	margin-left:100px;
+}
+
+.whiteZone
+{
+	position:relative;
+	left:100px; top:30px;
+}
+
+.equipeTitle h2
+{
+	font-family:"Urban";
+	position:relative;
+	bottom:26px; 
+	font-size:1.3em;
+}
+
+.equipeTitle img
+{
+	height:60px;
+	position:absolute;
+	top:0px;
+	left:110px;
+	transform:rotate(8deg);
+}
+
+.resume
+{
+	width:200px;
+	position:relative;
+	left:-10px;top:10px;
+}
+
+
+.slideButton
+{
+	position:absolute;
+	cursor:pointer;
+	top:400px;
+	
+}
+
+.slideButton>div
+{
+	width:25px;
+	height:3px;
+	background-color:black;
+	position:relative;
+	left:200px;top:-20px;
+	transition:0.5s;
+	
+}
+
+.slideButton>div:nth-child(1)
+{
+	transform:rotate(90deg) translateX(3px);
+}
+
+.redEquipePaper
+{
+	position:absolute;
+	left:300px;top:160px;
+	width:376px;
+	height:400px;
+	transform:translateX(-10rem);
+	opacity:0;
+	z-index:-1;
+	background-image:url("images/redOrientedPaper.png");
+	transition:0.5s;
+}
+
+.redEquipePaper>*
+{
+	position:relative;
+	left:150px;
+}
+
+#slideClose
+{
+	display:none;
+}
+
+#slideClose:checked ~ .slideButton>div:nth-child(1)
+{
+	transform:rotate(1deg) translateY(1px);
+}
+
+
+#slideClose:checked ~ .redEquipePaper
+{
+	transform:translateX(0rem);
+	opacity:1;
+}
+
+
+
+
+
+#eq1
+{
+	margin-left:200px;
+}
+
+.redEquipePaper1
+{
+	position:absolute;
+	left:900px;top:160px;
+	width:376px;
+	height:400px;
+	transform:translateX(-10rem);
+	opacity:0;
+	z-index:-1;
+	background-image:url("images/redOrientedPaper.png");
+	transition:0.5s;
+}
+
+.redEquipePaper1>*
+{
+	position:relative;
+	left:150px;
+}
+
+#slideClose1
+{
+	display:none;
+}
+
+#slideClose1:checked ~ .slideButton>div:nth-child(1)
+{
+	transform:rotate(1deg) translateY(1px);
+}
+
+
+#slideClose1:checked ~ .redEquipePaper1
+{
+	transform:translateX(0rem);
+	opacity:1;
+}
+
+
+
+
+
+#eq2
+{
+	margin-left:200px;
+}
+
+.redEquipePaper2
+{
+	position:absolute;
+	left:1450px;top:160px;
+	width:376px;
+	height:400px;
+	transform:translateX(-10rem);
+	opacity:0;
+	z-index:-1;
+	background-image:url("images/redOrientedPaper.png");
+	transition:0.5s;
+}
+
+.redEquipePaper2>*
+{
+	position:relative;
+	left:150px;
+}
+
+#slideClose2
+{
+	display:none;
+}
+
+#slideClose2:checked ~ .slideButton>div:nth-child(1)
+{
+	transform:rotate(1deg) translateY(1px);
+}
+
+
+#slideClose2:checked ~ .redEquipePaper2
+{
+	transform:translateX(0rem);
+	opacity:1;
+}
+
+
+
+
+
+#eq3
+{
+	margin-top:100px;
+	margin-left:100px;
+}
+
+#slideButton3
+{
+	position:absolute;
+	cursor:pointer;
+	top:900px;
+}
+
+#slideButton3>div
+{
+	width:25px;
+	height:3px;
+	background-color:black;
+	position:relative;
+	left:200px;top:-20px;
+	transition:0.5s;
+	
+}
+
+#slideButton3>div:nth-child(1)
+{
+	transform:rotate(90deg) translateX(3px);
+}
+
+.redEquipePaper3
+{
+	position:absolute;
+	top:650px;left:300px;
+	width:376px;
+	height:400px;
+	transform:translateX(-10rem);
+	opacity:0;
+	z-index:-1;
+	background-image:url("images/redOrientedPaper.png");
+	transition:0.5s;
+}
+
+.redEquipePaper3>*
+{
+	position:relative;
+	left:150px;
+}
+
+#slideClose3
+{
+	display:none;
+}
+
+#slideClose3:checked ~ .slideButton>div:nth-child(1)
+{
+	transform:rotate(1deg) translateY(1px);
+}
+
+
+#slideClose3:checked ~ .redEquipePaper3
+{
+	transform:translateX(0rem);
+	opacity:1;
+}
+
+
+
+
+
+#eq4
+{
+	margin-top:100px;
+	margin-left:200px;
+}
+
+#slideButton4
+{
+	position:absolute;
+	cursor:pointer;
+	top:900px;
+}
+
+#slideButton4>div
+{
+	width:25px;
+	height:3px;
+	background-color:black;
+	position:relative;
+	left:200px;top:-20px;
+	transition:0.5s;
+	
+}
+
+#slideButton4>div:nth-child(1)
+{
+	transform:rotate(90deg) translateX(3px);
+}
+
+.redEquipePaper4
+{
+	position:absolute;
+	top:650px;left:900px;
+	width:376px;
+	height:400px;
+	transform:translateX(-10rem);
+	opacity:0;
+	z-index:-1;
+	background-image:url("images/redOrientedPaper.png");
+	transition:0.5s;
+}
+
+.redEquipePaper4>*
+{
+	position:relative;
+	left:150px;
+}
+
+#slideClose4
+{
+	display:none;
+}
+
+#slideClose4:checked ~ .slideButton>div:nth-child(1)
+{
+	transform:rotate(1deg) translateY(1px);
+}
+
+
+#slideClose4:checked ~ .redEquipePaper4
+{
+	transform:translateX(0rem);
+	opacity:1;
+}
+
+
+
+
+#eq5
+{
+	margin-top:100px;
+	margin-left:150px;
+}
+
+#slideButton5
+{
+	position:absolute;
+	cursor:pointer;
+	top:900px;
+}
+
+#slideButton5>div
+{
+	width:25px;
+	height:3px;
+	background-color:black;
+	position:relative;
+	left:200px;top:-20px;
+	transition:0.5s;
+	
+}
+
+#slideButton5>div:nth-child(1)
+{
+	transform:rotate(90deg) translateX(3px);
+}
+
+.redEquipePaper5
+{
+	position:absolute;
+	top:650px;left:1400px;
+	width:376px;
+	height:400px;
+	transform:translateX(-10rem);
+	opacity:0;
+	z-index:-1;
+	background-image:url("images/redOrientedPaper.png");
+	transition:0.5s;
+}
+
+.redEquipePaper5>*
+{
+	position:relative;
+	left:150px;
+}
+
+#slideClose5
+{
+	display:none;
+}
+
+#slideClose5:checked ~ .slideButton>div:nth-child(1)
+{
+	transform:rotate(1deg) translateY(1px);
+}
+
+
+#slideClose5:checked ~ .redEquipePaper5
+{
+	transform:translateX(0rem);
+	opacity:1;
+}
+
+
+
+/* --------EQUIPE PAPER------- */
+
+.redPaper
+{
+	display:flex;
+	flex-direction:column;
+}
+
+.redPaper h1
+{
+	width:100px;
+	font-size:1.3em;
+	
+	text-decoration:underline;
+	
+	color:white;
+}
+
+
+.redPaper p
+{
+	width:130px;
+	position:relative;
+	left:130px;
+}
+
+.redPaper h2
+{
+	position:relative;
+	left:94px;
+	
+	color:white;
+	text-decoration:underline;
+	
+	margin-bottom:-10px;
+}
+
+.redPaper ul>li:nth-child(1)
+{
+	position:relative;
+	left:-65px;
+}
+
+.redPaper ul>li:nth-child(2)
+{
+	position:relative;
+	left:-60px;
+}
+
+.redPaper ul>li:nth-child(3)
+{
+	position:relative;
+	left:-55px;
+}
+
+.redPaper ul>li:nth-child(4)
+{
+	position:relative;
+	left:-50px;
+}
 
 
 
