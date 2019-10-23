@@ -23,17 +23,24 @@ body
 #realBody
 {
 	background-image:url("images/bgRealisation.jpg");
-		
 }
 /* -----------------------HEADER----------------------- */
 
 header
 {
 	border-bottom:1px solid rgba(20, 20, 20, 0.1);
+	background-color:white;
+	opacity:0.95;
+	
 	display:flex;
 	flex-direction:row;
+	
 	width:100%;
-	background-color:rgba(100,100,100,0.7);
+	
+	position:fixed;
+	top:0px;
+	
+	z-index:999;
 }
 
 header img
@@ -80,7 +87,7 @@ header img
 
 #menu
 {
-	background-color:grey;
+	background-color:white;
 	opacity:0.7;
 	width:350px;
 	height:100vh;
@@ -105,7 +112,7 @@ header img
 #menu nav a
 {
 	margin:15px;
-	color:white;
+	color:black;
 	font-size:2em;
 	text-decoration:none;
 	transition:0.5s;
@@ -113,7 +120,7 @@ header img
 
 #menu nav a:hover
 {
-	color:black;
+	color:grey;
 }
 
 #menuClose:checked~#menu
@@ -145,7 +152,7 @@ header img
 
 /* -----------------------ACCUEIL----------------------- */
 
-main > a
+#textTitle  a
 {
 	text-decoration:none;
 	color:black;
@@ -279,6 +286,36 @@ main > a
 
 /*------------------------------------ REALISATION ------------------------------------*/
 
+#realTitle
+{
+	position:relative;
+	top:30px;
+	
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;	
+	
+	width:500px;
+	margin:auto;
+	
+	text-align:center;
+}
+
+#realTitle h1
+{
+	text-decoration:overline;
+	font-size:4em;
+}
+
+#realTitle h2
+{
+	font-size:1.8em;
+	
+	position:relative;
+	top:-70px;
+	
+	margin-bottom:-80px;
+}
 .realColonne
 {
 	display:flex;
@@ -297,6 +334,7 @@ main > a
 	height:500px;
 	margin:20px;
 	background-size:cover;
+	box-shadow:7px 7px 20px black;
 }
 
 #bat{background-image:url("images/bat.jpg");}
@@ -313,7 +351,6 @@ main > a
 .hidden 
 {
 	opacity:0;
-	background-color:rgba(150,150,200,0.8);
 	height:500px;
 	transition: opacity 1s ease-in-out;
 	
@@ -333,6 +370,7 @@ main > a
 	margin:auto;
 	
 	overflow:hidden;
+	color:white;
 }
 
 .paper h1
@@ -380,7 +418,7 @@ main > a
 	width:30%;
 }
 
-.stats>div a
+.stats div a
 {
 	text-decoration:none;
 	color:orange;
@@ -417,6 +455,9 @@ footer
 	width:100%;
 	height:150px;
 	background-color:rgba(50,50,50,0.5);
+	backdrop-filter:blur(5px);
+	position:relative;
+	top:45px;
 }
 
 footer nav
@@ -456,5 +497,5 @@ footer nav a:hover
 
 #contactFooter
 {
-	margin-top:50px;
+	margin-top:60px;
 }
