@@ -558,6 +558,8 @@ header img
 	transform:rotate(90deg) translateX(3px);
 }
 
+
+
 .redEquipePaper
 {
 	position:absolute;
@@ -953,18 +955,98 @@ header img
 	left:-50px;
 }
 
+/* ----------------------PRESENTATION---------------------- */
 
+#presMain
+{
+	display:flex;
+	flex-direction:row;
+	
+	justify-content:space-around;
+	box-shadow:0 0 10px black;
+	backdrop-filter:blur(5px);
+}
+
+
+#presTitle
+{
+	font-size:3em;
+	text-decoration:overline;
+	
+	text-align:center;
+	margin-top:60px;
+}
+
+
+#presMain aside
+{
+	width:40%;
+	
+	margin:10px;
+}
+
+
+#presLeft
+{
+	display:flex;
+	flex-direction:column;
+	
+	width:60%;
+}
+
+
+.presCardLeft
+{
+	height:400px;
+}
+
+
+.presCardLeft h1
+{
+	border-bottom:2px solid orange;
+	width:180px;
+}
+
+
+.presImgs
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	margin:10px;
+}
+
+.imageLegend img
+{
+	width:200px;
+	height:150px;;
+}
+
+.imageLegend details
+{
+	width:200px;
+}
+
+.imageLegend details p
+{
+	margin:0px;
+}
 
 /* -----------------------FOOTER------------------------ */
 
 footer
 {	
 	width:100%;
-	height:150px;
+	height:120px;
 	background-color:rgba(50,50,50,0.5);
 	backdrop-filter:blur(5px);
+	position:absolute;
+	bottom:0px;
+}
+
+#scrollFooter
+{
 	position:relative;
-	top:45px;
 }
 
 footer nav
@@ -982,14 +1064,14 @@ footer nav div
 	border-right:1px solid white;
 	width:400px;
 	
-	transform:translate(0,20px);
+	margin-top:10px;
 }
 
 footer nav a
 {
 	color:white;
 	margin:10px;
-	font-size:2em;
+	font-size:1.7em;
 	text-decoration:none;
 	text-align:center;
 	transition:0.5s;
@@ -1004,5 +1086,5 @@ footer nav a:hover
 
 #contactFooter
 {
-	margin-top:60px;
+	margin-top:40px;
 }
