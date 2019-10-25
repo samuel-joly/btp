@@ -14,12 +14,6 @@ body
 	background-repeat:no-repeat;
 }
 
-@font-family
-{
-	font-family:"Urban";
-	src:url("Urban.otf");
-}
-
 #mainBody
 {
 	overflow:hidden;
@@ -961,10 +955,15 @@ header img
 {
 	display:flex;
 	flex-direction:row;
-	
+	height:100%;
 	justify-content:space-around;
+	margin:15px;
+	margin-top:100px;
+	margin-bottom:100px;
 	box-shadow:0 0 10px black;
 	backdrop-filter:blur(5px);
+	font-size:1.15em;
+	
 }
 
 
@@ -982,7 +981,15 @@ header img
 {
 	width:40%;
 	
-	margin:10px;
+	margin-left:15px;
+	padding: 1rem;
+}
+
+
+#presMain aside img
+{
+	width:60%;
+	margin-left:150px;
 }
 
 
@@ -990,48 +997,55 @@ header img
 {
 	display:flex;
 	flex-direction:column;
+	padding-right:1rem;
+	
+	backdrop-filter:blur(5px);
 	
 	width:60%;
+	
+	border-right:2px solid;
+	border-image: linear-gradient(to bottom, transparent, black, transparent) 1 100%;
+	
+	
 }
-
 
 .presCardLeft
 {
-	height:400px;
+	margin:15px;
 }
 
 
 .presCardLeft h1
 {
 	border-bottom:2px solid orange;
-	width:180px;
+	width:200px;
 }
 
+#presMain aside h1
+{
+	border-bottom:2px solid orange;
+	width:310px;
+	margin:auto;
+}
 
-.presImgs
+.presImg
 {
 	display:flex;
 	flex-direction:row;
-	justify-content:space-between;
-	margin:10px;
+	justify-content:space-around;
 }
 
-.imageLegend img
+.presImg img
 {
-	width:200px;
-	height:150px;;
+	width:20%;
+	box-shadow:0 0 10px black;
+	transform:scale(1,1);
 }
 
-.imageLegend details
+.presImg img:hover
 {
-	width:200px;
+	animation-name:slide-show;
 }
-
-.imageLegend details p
-{
-	margin:0px;
-}
-
 /* -----------------------FOOTER------------------------ */
 
 footer
