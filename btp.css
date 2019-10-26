@@ -1200,6 +1200,7 @@ form .question input[type="text"]:valid ~ label {
 	margin-right:10px;
 	color:white;
 }
+
 /* real hidden button */
 #switcher
 {
