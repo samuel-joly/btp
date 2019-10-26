@@ -14,6 +14,12 @@ body
 	background-repeat:no-repeat;
 }
 
+@font-family
+{
+	font-family:"Urban";
+	src:url("Urban.otf");
+}
+
 #mainBody
 {
 	overflow:hidden;
@@ -552,8 +558,6 @@ header img
 	transform:rotate(90deg) translateX(3px);
 }
 
-
-
 .redEquipePaper
 {
 	position:absolute;
@@ -949,104 +953,6 @@ header img
 	left:-50px;
 }
 
-/* ----------------------PRESENTATION---------------------- */
-
-#presMain
-{
-	display:flex;
-	flex-direction:row;
-	height:100%;
-	justify-content:space-around;
-	margin:15px;
-	margin-top:100px;
-	margin-bottom:100px;
-	box-shadow:0 0 10px black;
-	backdrop-filter:blur(5px);
-	font-size:1.15em;
-	
-}
-
-
-#presTitle
-{
-	font-size:3em;
-	text-decoration:overline;
-	
-	text-align:center;
-	margin-top:60px;
-}
-
-
-#presMain aside
-{
-	width:40%;
-	
-	margin-left:15px;
-	padding: 1rem;
-}
-
-
-#presMain aside img
-{
-	width:60%;
-	margin-left:150px;
-}
-
-
-#presLeft
-{
-	display:flex;
-	flex-direction:column;
-	padding-right:1rem;
-	
-	backdrop-filter:blur(5px);
-	
-	width:60%;
-	
-	border-right:2px solid;
-	border-image: linear-gradient(to bottom, transparent, black, transparent) 1 100%;
-	
-	
-}
-
-.presCardLeft
-{
-	margin:15px;
-}
-
-
-.presCardLeft h1
-{
-	border-bottom:2px solid orange;
-	width:200px;
-}
-
-#presMain aside h1
-{
-	border-bottom:2px solid orange;
-	width:310px;
-	margin:auto;
-}
-
-.presImg
-{
-	display:flex;
-	flex-direction:row;
-	justify-content:space-around;
-}
-
-.presImg img
-{
-	width:20%;
-	box-shadow:0 0 10px black;
-	transform:scale(1,1);
-}
-
-.presImg img:hover
-{
-	animation-name:slide-show;
-}
-
 
 /* ------------------------------FORM---------------------------- */
 
@@ -1173,8 +1079,6 @@ form .question input[type="text"]:valid ~ label {
 
 
 
-
-/* ------------------------SWITCH------------------------ */
 .controls
 {
 	display:flex;
@@ -1198,7 +1102,6 @@ form .question input[type="text"]:valid ~ label {
 {
 	transform:translateY(5px);
 	margin-right:10px;
-	color:white;
 }
 /* real hidden button */
 #switcher
@@ -1256,16 +1159,11 @@ form .question input[type="text"]:valid ~ label {
 footer
 {	
 	width:100%;
-	height:120px;
+	height:150px;
 	background-color:rgba(50,50,50,0.5);
 	backdrop-filter:blur(5px);
-	position:absolute;
-	bottom:0px;
-}
-
-#scrollFooter
-{
 	position:relative;
+	top:45px;
 }
 
 footer nav
@@ -1283,14 +1181,14 @@ footer nav div
 	border-right:1px solid white;
 	width:400px;
 	
-	margin-top:10px;
+	transform:translate(0,20px);
 }
 
 footer nav a
 {
 	color:white;
 	margin:10px;
-	font-size:1.7em;
+	font-size:2em;
 	text-decoration:none;
 	text-align:center;
 	transition:0.5s;
@@ -1305,5 +1203,7 @@ footer nav a:hover
 
 #contactFooter
 {
-	margin-top:40px;
+	margin-top:60px;
 }
+
+

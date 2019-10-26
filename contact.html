@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="btp.css"/>
+		<title>BTP - Parede - Contact</title>
+	</head>
+
+	<body id="mainBody">
+		<header>
+			<img src="images/logo.png"/>
+			<h1 id="title"><a href="accueil.html" style="text-decoration:none;color:black;">Parede</a></h1>
+		
+			
+			<input type="checkbox" id="menuClose"/>
+			<label for="menuClose" id="burgerButton">
+				<div></div>
+				<div></div>
+				<div></div>
+			</label>
+			
+			<nav id="menu">
+				<nav>
+					<a href="accueil.html">Accueil</a>
+					<a href="presentation.html">Présentation</a>
+					<a href="equipe.html">Equipe</a>
+					<a href="realisation.html">Réalisation</a>
+					<a href="contact.html">Contact</a>
+				</nav>
+				
+				<div id="proInfo">
+					<div id="socialMenuLink">
+						<a href="facebook.com"><img src="images/facebookLogo.png"/></a>
+						<a href="twitter.com"><img src="images/twitterLogo.png"/></a>
+						<a href="mailto:parede@gmail.com"><img src="images/gMailLogo.png"/></a>
+						<a href="contact.html"><img src="images/phoneLogo.png"/></a>
+					</div>
+					
+					<div>
+						Vous voulez expandre votre empire ? Parede est là pour vous !
+						Présent depuis <strong>la nuit des temps</strong> nous serons
+						ravis de travailler à vos cotés.
+					</div>
+					
+					<details>
+						<summary>Copyright 11k Av J.C. - 2019.</summary>
+						<p>Contact presse 0668975674</p>
+					</details>
+				</div>
+			</nav>
+		
+		</header>
+
+		<main>
+			<form>
+
+				<div class="question">
+					<input type="text" required/>
+					<label>Nom</label>
+				</div>
+				
+				<div class="question">
+					<input type="text" required/>
+					<label>Prenom</label>
+				</div>
+
+				<div class="question">
+					<input type="text" required/>
+					<label>Mail</label>
+				</div>
+
+				<div class="question">
+					<input type="text" required/>
+					<label>Telephone</label>
+				</div>
+
+				<div class="question">
+					<div id="zonetexte">
+						<input type="text" height="70px" required/>
+						<label>Votre demande</label>
+					</div>
+				</div>
+				
+				<div class="controls">
+					<div id="toggleZone">
+						<label for="check">Recevoir la newsLetter</label>
+						<input class='toggle' id="switcher" type="checkbox" name='check' />
+						<label for="switcher" id="switch">
+							<div id="outer">
+								<div id="inner"></div>
+							</div>
+						</label>
+					</div>
+					
+					<input type="submit"/>
+				</div>
+			
+			</form>
+		</main>
+
+		<footer id="#scrollFooter">
+			<nav>
+				<div>
+					<a href="accueil.html">Accueil</a> <a href="presentation.html">Présentation</a> 
+				</div>
+				
+				<div>
+					<a href="equipe.html">Equipe</a> <a href="realisation.html">Réalisation</a>
+				</div>
+				
+				<a id="contactFooter" href="contact.html">Contact</a>
+			</nav>
+		</footer>
+	</body>
+
+</html>
