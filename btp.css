@@ -1050,154 +1050,174 @@ header img
 
 /* ------------------------------FORM---------------------------- */
 
+.question
+{
+	animation-name: fadeInRight;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	
+}
 
 form
 {
 	margin-top: 150px;
 	width:500px;
-	box-sizing: border-box;
-	padding: 30px 25px;
-	background-color:rgba(50,50,50,0.5);
-	border-radius: 10px;
-	box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
-
+	padding: 30px;
 	margin:auto;
 	margin-top:100px;
+	
+	background-color:rgba(50,50,50,0.5);
+	border-radius: 10px;
+	box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.75);
+	
+	animation-name: fadeInLeft;
+	animation-duration: 1s;
+	animation-fill-mode: both;
 }
 
-form button 
+form>div
 {
-	margin-top: 35px;
-	background-color:rgba(50,50,50,0.5);
+	margin:auto;
+}
 
-	border: 1px solid #ff4a56;
-	line-height: 0;
-	font-size: 17px;
-	display: inline-block;
-	box-sizing: border-box;
+.controls input[type="submit"]
+{
+	background-color:rgba(50,50,50,0.5);
+	
 	padding: 20px 15px;
+
+	border: 1px solid #fff;
 	border-radius: 60px;
-	color: #ff4a56;
-	font-weight: 100;
-	letter-spacing: 0.01em;
-	position: relative;
-	z-index: 1;
-}
-
-form button:hover, form button:focus 
-{
-	color: white;
-	background-color:rgba(50,50,50,0.5);
-}
-form .question 
-{
-	position: relative;
-	padding: 10px 0;
-}
-
-form .question:first-of-type 
-{
-	padding-top: 0;
-}
-
-form .question:last-of-type 
-{
-	padding-bottom: 0;
-}
-
-form .question label 
-{
-	transform-origin: left center;
-	color: #ff4a56;
-	font-weight: 100;
-	letter-spacing: 0.01em;
+	
 	font-size: 17px;
-	box-sizing: border-box;
+	width:150px;
+	
+	cursor:pointer;
+}
+
+
+.controls input[type="submit"]:hover
+{
+	background-color:rgba(100,100,100,0.5);
+}
+
+.question 
+{
+	margin: 10px;
+}
+
+
+.question label 
+{
+	font-size: 17px;
+
 	padding: 10px 15px;
+	margin-top: -40px;
+	margin-left:370px;
 	display: block;
 	position: absolute;
-	margin-top: -40px;
-	z-index: 2;
-	pointer-events: none;
+	color:white;
+	text-shadow:1px 1px 3px black;
+	
+	transition:transform 0.4s ease;
 }
 
-form .question input[type="text"] {
+.question input
+{
 	appearance: none;
 	background-color:rgba(50,50,50,0.5);
 
-	border: 1px solid #ff4a56;
-	line-height: 0;
+	border: 1px solid #fff;
 	font-size: 17px;
 	width: 100%;
-	display: block;
-	box-sizing: border-box;
+	
 	padding: 10px 15px;
 	border-radius: 60px;
-	color: #ff4a56;
-	font-weight: 100;
-	letter-spacing: 0.01em;
-	position: relative;
-	z-index: 1;
-}
-	
-form .question input[type="text"]:focus {
-	outline: none;
-	background-color:rgba(50,50,50,0.5);
 	color: white;
-	margin-top: 30px;
+	text-shadow:1px 1px 3px black;
+	transition:margin 0.4s ease;
 }
 
-form .question input[type="text"]:valid {
-	margin-top: 30px;
-}
-	
-form .question input[type="text"]:focus ~ label {
-	-moz-transform: translate(0, -35px);
-	-ms-transform: translate(0, -35px);
-	-webkit-transform: translate(0, -35px);
-	transform: translate(0, -35px);
-	}
-form .question input[type="text"]:valid ~ label {
-	text-transform: uppercase;
-	font-style: italic;
-	-moz-transform: translate(5px, -35px) scale(0.6);
-	-ms-transform: translate(5px, -35px) scale(0.6);
-	-webkit-transform: translate(5px, -35px) scale(0.6);
-	transform: translate(5px, -35px) scale(0.6);
-	}
-
-.zonetexte
+.question textarea
 {
-	height: 70px;
+	border-radius: 10px;
+	background-color:rgba(50,50,50,0.5);
+	resize:none;
+	
+	font-size:1.3em;
 }
 
+.question input:focus
+{
+	background-color:rgba(50,50,50,0.5);
+	margin-top: 30px;
+}
 
+.question input:focus~label
+{
+	transform: translate(0, -35px);
+}
 
+.question textarea:focus
+{
+	margin-bottom:30px;
+	transition:margin 0.3s ease;
+}
+
+.question textarea:focus ~ #textareaLabel
+{
+	transform: translate(0, 10px);
+} 
+
+@keyframes fadeInLeft 
+{
+	0% 
+	{
+		opacity: 0;
+		transform: translate3d(-100%, 0, 0);
+	}
+	100%
+	{
+		opacity: 1;
+		transform: none;
+	}
+} 
+
+@keyframes fadeInRight 
+{
+	0% 
+	{
+		opacity: 0;
+		transform: translate3d(100%, 0, 0);
+	}
+	100% 
+	{
+		opacity: 1;
+		transform: none;
+	}
+}
 
 /* ------------------------SWITCH------------------------ */
 .controls
 {
 	display:flex;
-	flex-direction:column;
+	flex-direction:row;
 	justify-content:space-around;
 }
 
-.controls input[type="submit"]
-{
-	width:30%;
-}
 
 #toggleZone
 {
 	display:flex;
 	flex-direction:row;
 	justify-content:flex-start;
+	margin-top:10px;
 }
 
 #toggleZone label:nth-child(1)
 {
 	transform:translateY(5px);
-	margin-right:10px;
+	margin-right:14px;
 	color:white;
 }
 
@@ -1231,6 +1251,7 @@ form .question input[type="text"]:valid ~ label {
 	transition:background, filter 0.5s;
 	background-color:#5fe8e3;
 	filter:drop-shadow(0 0 0.75rem #5fe8e3);
+	cursor:pointer;
 }
 
 /* Button */
@@ -1247,7 +1268,6 @@ form .question input[type="text"]:valid ~ label {
 	border:2px solid #fff;
 	padding:-8px;
 	
-	cursor:pointer;
 }
 
 
