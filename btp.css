@@ -1008,6 +1008,7 @@ header img
 }
 
 
+
 .presCardLeft
 {
 	margin:15px;
@@ -1057,6 +1058,7 @@ header img
 }
 
 
+
 form
 {
 	margin-top: 150px;
@@ -1074,12 +1076,10 @@ form
 	animation-fill-mode: both;
 }
 
-
 form>div
 {
 	margin:auto;
 }
-
 
 .controls input[type="submit"]
 {
@@ -1186,7 +1186,6 @@ form>div
 	}
 } 
 
-
 @keyframes fadeInRight 
 {
 	0% 
@@ -1200,7 +1199,6 @@ form>div
 		transform: none;
 	}
 }
-
 
 
 /* ------------------------SWITCH------------------------ */
