@@ -1005,9 +1005,8 @@ header img
 	
 	border-right:2px solid;
 	border-image: linear-gradient(to bottom, transparent, black, transparent) 1 100%;
-	
-	
 }
+
 
 .presCardLeft
 {
@@ -1055,8 +1054,8 @@ header img
 	animation-name: fadeInRight;
 	animation-duration: 1s;
 	animation-fill-mode: both;
-	
 }
+
 
 form
 {
@@ -1075,10 +1074,12 @@ form
 	animation-fill-mode: both;
 }
 
+
 form>div
 {
 	margin:auto;
 }
+
 
 .controls input[type="submit"]
 {
@@ -1101,6 +1102,7 @@ form>div
 	background-color:rgba(100,100,100,0.5);
 }
 
+
 .question 
 {
 	margin: 10px;
@@ -1121,6 +1123,7 @@ form>div
 	
 	transition:transform 0.4s ease;
 }
+
 
 .question input
 {
@@ -1183,6 +1186,7 @@ form>div
 	}
 } 
 
+
 @keyframes fadeInRight 
 {
 	0% 
@@ -1196,6 +1200,8 @@ form>div
 		transform: none;
 	}
 }
+
+
 
 /* ------------------------SWITCH------------------------ */
 .controls
